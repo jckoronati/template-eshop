@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --gray-500: #b8b6b4;
+    --gray-600: #1B2838;
+    --gray-800: #171a21;
+}
+
+$grids-breakpoints: (
+    sm: 540px,
+    md: 740px,
+    lg: 960px,
+    xl: 1140px,
+    xll: 1600px
+) !default;
+
+@mixin mq($breakpoint, $type: 'min') {
+    @media (#{$type}-width: map_get($grids-breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+
+html {
+    background-color: var(--gray-800);
+    font-size: 87.5%;
+    
+    @include mq(md) {
+        font-size: 93.75%;
+    }
+}
+
+body {
+    --webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    
+    @include mq(xl) {
+        max-width: 1140px;
+    }
+}
+
+@import "./reset/reset.scss";
+@import "./swiper/swiper.scss";
+@import "./header/header.scss";
+@import "./main/style.scss";

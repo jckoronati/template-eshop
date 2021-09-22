@@ -1,0 +1,69 @@
+:root {
+    --background-top-header: var(--gray-600);
+    --font-brand-color: var(--gray-500);
+    --font-menu-color: var(--gray-500);
+}
+
+.header {
+    align-items: center;
+    background-color: var(--background-top-header);
+    display: flex;
+    padding: 2.35rem 0;
+
+
+    @include mq(md) {
+        height: 5rem;
+        padding: 0;
+    }
+    
+    &__top-bar {
+        padding: 0 10px;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-row: 10px;
+
+        @include mq(md) {
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+
+        h1 {
+            color: var(--font-brand-color);
+            font-size: 1.2rem;
+            text-align: center;
+            @include mq(md) {
+                text-align: left;
+                font-size: 3.5rem;
+            }
+        }
+
+        &-menu {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                li {
+                    color: var(--font-menu-color);
+                    margin: 0 0.25rem;
+                }
+            }            
+        }
+
+        &-icons {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            @include mq(md) {
+                justify-content: flex-start;
+            }
+
+            p {
+                color: var(--font-menu-color);
+            }
+        }
+    }
+}

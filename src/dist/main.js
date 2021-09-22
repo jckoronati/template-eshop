@@ -1,0 +1,2 @@
+import Swiper from"https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";const swiper=new Swiper(".swiper",{direction:"horizontal",loop:!0,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}});
+//# sourceMappingURL=main.js.map
