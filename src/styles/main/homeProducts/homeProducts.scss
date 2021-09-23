@@ -1,0 +1,42 @@
+.home{    
+    &__products{
+        height: 45rem;
+        padding: 0.75rem 0;
+        &-left {
+            &-card {
+                width: 19.58rem;
+
+                &-text {
+                    color: var(--gray-500);
+                    display: none;
+                    padding: 0 .65rem;
+                    position: relative;
+                    top: -18rem;
+
+                    h3 {
+                        font-size: 1.35rem;
+                        margin-bottom: 0.35rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                img {
+                    height: 32rem;
+                    border-radius: 0.25rem;
+                    transition: all .5s;
+                    &:hover {
+                        transform: scale(0.95);
+                        filter: brightness(0.25);
+                        
+                        + .home__products-left-card-text {
+                            display: block;
+                        }
+                    }
+                }
+            }            
+        }
+    }
+}

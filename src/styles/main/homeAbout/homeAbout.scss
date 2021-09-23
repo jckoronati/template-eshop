@@ -1,0 +1,39 @@
+:root {
+    --background: var(--gray-600);
+    --font-color-text: var(--gray-500);
+}
+
+.home__about {
+    background-color: var(--background);
+    height: 25rem;
+    &-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 0.85rem;
+        
+        &-text {
+            margin-top: 5rem;
+
+            h2 {
+                font-size: 2.3rem;
+                margin: 0.60rem 0;
+            }
+            
+            h3 {
+                font-size: 0.95rem;
+                margin: 0;
+            }
+            
+            p {
+                font-size: 1rem;
+                line-height: 1.25rem;
+            }
+            
+            h2,
+            h3,
+            p {
+                color: var(--font-color-text);
+            }
+        }
+    }
+}

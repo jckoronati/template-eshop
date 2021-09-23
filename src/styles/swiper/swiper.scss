@@ -1,13 +1,13 @@
 .swiper {
     width: auto;
     height: 300px;
-}
 
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-    color: #fff;
-}
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+        color: #fff;
+    }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    background-color: #fff;
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        background-color: #fff;
+    }
 }

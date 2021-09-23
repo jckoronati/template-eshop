@@ -1,0 +1,150 @@
+:root {
+    --footer-color: var(--gray-500);
+    --background-button: var(--gray-800);
+}
+
+$darkenGray: darken(#b8b6b4, 12);
+
+%icons_footer {
+    height: 2rem;
+    transition: .5s;
+    margin: .35rem 0;
+}
+
+%icons_footer_hover {
+    cursor: pointer;
+    filter: brightness(0.55);
+}
+
+
+.footer {    
+    padding-top: 1.5rem;
+
+    &__bar {
+        padding: 0 0.85rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 0.65rem;
+
+        h2 {
+            font-size: 2rem;
+            color: var(--footer-color);            
+        }
+
+        &-first {
+            &-menu {
+                margin-top: 0.75rem;
+                ul {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 0.25rem;
+
+                    li {
+                        color: var(--footer-color);
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        &-second {
+            &-input {
+                margin-top: 0.75rem;
+                padding-bottom: 0.85rem;
+                border-bottom: 1px solid var(--footer-color);
+
+                form {
+                    width: 100%;
+                }
+
+                #email {
+                    background-color: transparent;
+                    border: 0;
+                    color: var(--footer-color);
+                    font-size: 1rem;
+                    width: 78%;
+                }
+
+                #buttonSubmit {
+                    background-color: var(--background-color);
+                    border: 1px solid (var(--footer-color));
+                    border-radius: 0.25rem;
+                    color: var(--footer-color);
+                    transition: filter 0.2s;
+                    width: 20%;
+                    padding: 0.25rem 0;
+                    font-weight: 700;
+                    font-size: 1rem;
+
+                    &:hover {
+                        cursor: pointer;
+                        filter: brightness(0.5);
+                    }
+                }
+            }
+        }
+
+        &-third {
+            &-social {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: .75rem;
+
+                .facebook-icon {
+                    @extend %icons_footer;
+
+                    &:hover { 
+                        @extend %icons_footer_hover;
+                        transform: scale(1.5) rotate(-25deg);
+                    }
+                }
+
+                .instagram-icon {
+                    @extend %icons_footer;
+
+                    &:hover { 
+                        @extend %icons_footer_hover;
+                        transform: scale(1.5) rotate(25deg);
+                    }
+                }
+            }
+        }
+    }
+
+    &__vnda {
+        padding-top: 1.5rem;
+        p {
+            color: var(--gray-500);
+            text-align: center;
+        }
+    }
+
+    &__my {
+        padding: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        p {
+            font-size: 0.95rem;
+            color: var(--footer-color);
+
+            a {
+                color: currentColor;
+                text-decoration: none;
+                transition: filter 0.2s;
+
+                &:hover {
+                    filter: brightness(0.5);
+                }
+            }
+        }
+
+        img {
+            height: 1rem;
+            margin: 0 0.25rem;
+        }
+    }
+}
