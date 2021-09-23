@@ -1,0 +1,45 @@
+.home {
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--gray-600);
+        padding: 5rem 0;
+
+        &-title {
+            color: var(--gray-500);
+            font-size: 2.56rem;
+            text-align: center;
+        }
+
+        &-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.56rem;
+            margin-top: 1.52rem;
+            
+            &-grid {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                height: 20rem;
+                
+                &:nth-child(1) {
+                    align-items: start;   
+                }
+
+                &:nth-child(2) {
+                    align-items: end;
+                }
+
+                &:nth-child(3) {
+                    align-items: start;
+                }
+
+                img {
+                    border-radius: 0.25rem;
+                }
+            }
+        }
+    }
+}
