@@ -6,7 +6,7 @@ Para instalar as dependências do projeto use o seguinte comando:
 
 `yarn ou npm install`
 
-Para dar rodar as tasks use o comando: 
+Para rodar as tasks use o comando: 
 
 `gulp`
 
