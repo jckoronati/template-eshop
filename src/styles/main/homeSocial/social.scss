@@ -5,7 +5,7 @@
         justify-content: center;
         background-color: var(--gray-600);
         padding: 5rem 0;
-
+        
         &-title {
             color: var(--gray-500);
             font-size: 2.56rem;
@@ -14,16 +14,24 @@
 
         &-content {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             gap: 0.56rem;
             margin-top: 1.52rem;
             
+            @include mq(md) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
             &-grid {
                 align-items: center;
                 display: flex;
                 justify-content: center;
-                height: 20rem;
+                height: auto;
                 
+                @include mq(md) {
+                    height: 20rem;
+                }
+
                 &:nth-child(1) {
                     align-items: start;   
                 }

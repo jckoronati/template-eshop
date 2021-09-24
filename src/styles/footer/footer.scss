@@ -23,8 +23,16 @@ $darkenGray: darken(#b8b6b4, 12);
     &__bar {
         padding: 0 0.85rem;
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr;
         gap: 0.65rem;
+
+        @include mq(sm) {
+            grid-template-columns: 1fr 2fr;
+        }
+
+        @include mq(md) {
+            grid-template-columns: 1fr 2fr 1fr;
+        }
 
         h2 {
             font-size: 2rem;
@@ -62,7 +70,15 @@ $darkenGray: darken(#b8b6b4, 12);
                     border: 0;
                     color: var(--footer-color);
                     font-size: 1rem;
-                    width: 78%;
+                    width: 75%;
+
+                    @include mq(sm) {
+                        width: 60%;
+                    }
+
+                    @include mq(md) {
+                        width:78%;
+                    }
                 }
 
                 #buttonSubmit {
