@@ -6,7 +6,7 @@ Para instalar as dependências do projeto use o seguinte comando:
 
 `yarn ou npm install`
 
-Para dar rodar as tasks use o comando: 
+Para rodar as tasks use o comando: 
 
 `gulp`
 
@@ -21,4 +21,4 @@ As seguintes libs foram utilizadas para o desenvolvimento:
 - https://postcss.org/
 - https://github.com/sass/dart-sass
 
-## Made with <img style="height: 100px;" src="https://twemoji.maxcdn.com/v/13.0.0/72x72/2764.png" alt="Hearth Twemoji" title="Hearth Twemoji"> by Júlio Cezar Koronati
+## Made with <img style="height: 20px;" src="https://twemoji.maxcdn.com/v/13.0.0/72x72/2764.png" alt="Hearth Twemoji" title="Hearth Twemoji"> by Júlio Cezar Koronati
